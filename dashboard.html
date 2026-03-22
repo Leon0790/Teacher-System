@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Welcome {{user}}</h2>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+<div style="background:white;padding:20px;border-radius:10px;">💬 Chat</div>
+<div style="background:white;padding:20px;border-radius:10px;">📊 Performance</div>
+<div style="background:white;padding:20px;border-radius:10px;">🕵️ Reports</div>
+</div>
+
+{% endblock %}
