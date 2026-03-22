@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>School System</title>
+<style>
+body { margin:0; font-family:Arial; display:flex; }
+
+.sidebar {
+    width:220px;
+    background:#2c3e50;
+    color:white;
+    height:100vh;
+    padding:20px;
+}
+
+.sidebar a {
+    display:block;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+}
+
+.sidebar a:hover { background:#34495e; }
+
+.content {
+    flex:1;
+    padding:20px;
+    background:#f4f6f9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h3>School System</h3>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/chat">Chat</a>
+    <a href="/performance">Performance</a>
+    <a href="/report">Report</a>
+    <a href="/admin">Admin</a>
+    <a href="/logout">Logout</a>
+</div>
+
+<div class="content">
+{% block content %}{% endblock %}
+</div>
+
+</body>
+</html>
